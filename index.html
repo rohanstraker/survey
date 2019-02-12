@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/boostrap.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>survey</title>
+  </head>
+  <body>
+    <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="name">Enter your Name</label>
+          </div>
+          <input id="name" class="form-control" type="text">
+          <p>what is your birthday</p>
+          <div class="form-group">
+            <label for="born">Date of birth:</label>
+            <input id="born" class="form-control" type="date">
+          </div>
+          <p>What is your favorite food?</p>
+        <select class="form-control" id="food">
+            <option value="1">burger</option>
+            <option value="2">pizza</option>
+            <option value="3">tacos</option>
+            <option value="4">salad</option>
+          </select>
+<!--need parseInt()-->
+          <p>what is your favorite type of music</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="country" checked>
+            country
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="hip-hop">
+            hip-hop
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="rock">
+            rock
+          </label>
+        </div>
+        <p>what your favorite color</p>
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+        </form>
+        <div id="survey">
+          <p>Your name is <span class="name"></span></p>
+          <p>Your birthday is <span class="born"></span></p>
+        </div>
+
+  </body>
+</html>
